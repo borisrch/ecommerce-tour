@@ -148,6 +148,12 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.25px;
+  transition: all 0.3s ease;
+}
+
+.arrow-link:hover {
+  color: #0162cc;
+  border-bottom: 1px solid #0162cc;
 }
 
 .is-horizontal-center {
@@ -303,6 +309,15 @@ p {
 
 .grid-box {
   padding: 3rem;
+}
+
+.image-shadow {
+  filter: drop-shadow(2px 2px 8px rgba(60, 60, 65, 0.123));
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
