@@ -71,12 +71,22 @@
   background-color: #0162cc;
 }
 
-.cubes-background {
-  background-image: url("../images/edge-3.svg");
-  filter: hue-rotate(-6deg) opacity(0.95);
+.background-1 {
+  background-image: url("../images/edge-4.svg");
+  filter: hue-rotate(-6deg) opacity(0.9);
   width: 100%;
   min-height: 90vh;
   height: 90vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-2 {
+  background-image: url("../images/edge-6.svg");
+  filter: hue-rotate(0deg) opacity(0.9);
+  width: 100%;
+
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -178,7 +188,6 @@ h2,
 h3,
 h4 {
   color: #0b214a;
-  line-height: 44px;
   letter-spacing: -0.5px;
   margin-bottom: 0.5rem;
 }
@@ -222,11 +231,10 @@ h4 {
   font-weight: 600;
   line-height: 72px;
   letter-spacing: -0.25px;
-  margin-top: 4rem;
 }
 
 .footer {
-  background-color: #022144;
+  background-color: #11164b;
 }
 
 body {
@@ -293,11 +301,11 @@ p {
 .footer-link {
   margin-bottom: 0.5rem;
   display: block;
-  color: #697a89;
+  color: #C5CAE9;
 }
 
 .footer-link:hover {
-  color: #697a89;
+  color: #C5CAE9;
   text-decoration: underline;
 }
 
@@ -321,14 +329,48 @@ p {
   filter: drop-shadow(2px 2px 8px rgba(60, 60, 65, 0.123));
 }
 
+.grid-subtitle {
+  line-height: 1.75rem;
+}
+
 img {
   user-select: none;
   pointer-events: none;
 }
 
+.page-title {
+  color: #0b214a;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -.25px;
+}
+
+.pricing-card-1 {
+  border-top: 4px solid #b3e895;
+  border-radius: 0px;
+}
+
+.pricing-card-2 {
+  border-top: 4px solid #78e46e;
+  border-radius: 0px;
+}
+
+.pricing-card-3 {
+  border-top: 4px solid #4dc076;
+  border-radius: 0px;
+}
+
+.pricing-list-item {
+  margin-top: 2px;
+  margin-left: 0.35rem;
+}
+
+.d {
+  border: 1px solid red;
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
   .hero-title {
-    color: #fff;
     font-family: "TT Commons DemiBold";
     letter-spacing: 0.25px;
     font-size: 1rem;
@@ -337,7 +379,6 @@ img {
   }
 
   .hero-subtitle {
-    color: #fff;
     font-family: "TT Commons Regular";
     font-size: 1.35rem;
     line-height: 1;
@@ -365,60 +406,10 @@ img {
       letter-spacing: 0.25px;
       font-size: 3rem;
       margin-top: 3rem;
-      line-height: 1;
-    }
-  
-    .hero-subtitle {
-      color: #fff;
-      font-family: "TT Commons Regular";
-      font-size: 1.5rem;
-      line-height: 1;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-  
-    .mobile-hide {
-      display: none;
     }
 
-    .box {
-      background: #fff;
-      padding: 2rem;
-      box-shadow: none;
-      border-radius: 4px;
-    }
-
-    .grid-box {
-      padding: 1rem;
-    }
-
-    .gutterTop {
-      margin-top: 1rem;
-    }
-
-    .gutterBottom {
-      padding-bottom: 4rem;
-    }
-}
-
-/* iPhone XS Max, 11 Pro Max */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 896px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-
-/* iPhone XR, 11 */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 896px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .hero-title {
-      font-family: "TT Commons DemiBold";
-      letter-spacing: 0.25px;
-      font-size: 3rem;
-      margin-top: 3rem;
+    .hero-card-title {
+      font-size: 1.35rem;
     }
   
     .hero-subtitle {
@@ -457,6 +448,85 @@ img {
       line-height: 48px;
       letter-spacing: -2px;
       margin-top: 4rem;
+    }
+
+    .grid-subtitle {
+      line-height: 1.75rem;
+    }
+
+    .logo-light-sm {
+      margin-left: -7px;
+    }
+}
+
+/* iPhone XS Max, 11 Pro Max */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 896px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* iPhone XR, 11 */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 896px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-title {
+      font-family: "TT Commons DemiBold";
+      letter-spacing: 0.25px;
+      font-size: 3rem;
+      margin-top: 3rem;
+    }
+
+    .hero-card-title {
+      font-size: 1.35rem;
+    }
+  
+    .hero-subtitle {
+      font-family: "TT Commons Regular";
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .mobile-hide {
+      display: none;
+    }
+
+    .box {
+      background: #fff;
+      padding: 2rem;
+      box-shadow: none;
+      border-radius: 4px;
+    }
+
+    .grid-box {
+      padding: 1rem;
+    }
+
+    .gutterTop {
+      margin-top: 1rem;
+    }
+
+    .gutterBottom {
+      padding-bottom: 4rem;
+    }
+
+    .footer-title {
+      font-size: 2.5rem;
+      line-height: 48px;
+      letter-spacing: -2px;
+      margin-top: 4rem;
+    }
+
+    .grid-subtitle {
+      line-height: 1.75rem;
+    }
+
+    .logo-light-sm {
+      margin-left: -7px;
     }
 }
 
