@@ -353,8 +353,8 @@ img {
 
 .page-title {
   color: #0b214a;
-  font-weight: 600;
   line-height: normal;
+  letter-spacing: -0.5px;
 }
 
 .pricing-card-1 {
