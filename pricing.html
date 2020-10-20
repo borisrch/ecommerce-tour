@@ -32,9 +32,9 @@
       <div class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item" href="/"> Tour </a>
-          <a class="navbar-item"> Products </a>
+          <a class="navbar-item" href="./products"> Products </a>
           <a class="navbar-item"> Use Cases </a>
-          <a class="navbar-item"> Pricing </a>
+          <a class="navbar-item" href="./pricing"> Pricing </a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
@@ -49,8 +49,8 @@
     <div class="section-1">
       <div class="background-2">
         <div class="container p-6 has-text-centered">
-          <h1 class="medium page-title is-size-1">Pricing & Subscriptions</h1>
-          <h3 class="is-size-4">Choose a plan that's right for you.</h3>
+          <h1 class="medium is-size-1 page-title">Pricing & Subscriptions</h1>
+          <h3 class="is-size-4 mt-4">Choose a plan that's right for you.</h3>
         </div>
         <div class="container p-6 is-max-widescreen">
           <div class="columns">
@@ -194,7 +194,9 @@
                         src="https://img.icons8.com/color/48/000000/checked--v1.png"
                       />
                     </figure>
-                    <span class="pricing-list-item">Canada Post Snap Ship Integration</span>
+                    <span class="pricing-list-item"
+                      >Canada Post Snap Ship Integration</span
+                    >
                   </div>
                   <p class="medium mb-2 mt-4">Security</p>
                   <div class="is-flex mt-2">
@@ -219,7 +221,9 @@
                         src="https://img.icons8.com/color/48/000000/checked--v1.png"
                       />
                     </figure>
-                    <span class="pricing-list-item">Two Factor Authentication</span>
+                    <span class="pricing-list-item"
+                      >Two Factor Authentication</span
+                    >
                   </div>
                   <p class="medium mb-2 mt-4">Support</p>
                   <div class="is-flex mt-2">
@@ -233,7 +237,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="column">
               <div class="box pricing-card-3 p-5 shadow">
                 <div class="is-flex is-horizontal-center">
@@ -247,10 +251,34 @@
                 <p class="medium is-size-5">Coming Soon</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container p-6 is-max-widescreen">
+      <div class="container has-text-centered">
+        <h1 class="medium is-size-2 mb-6">Frequently Asked Questions</h1>
+      </div>
+
+      <div id="faq-root">
+
+      </div>
+
+      <!-- <div class="block faq-field">
+        <div class="columns is-mobile is-vcentered">
+          <div class="column is-11">
+            <span class="medium is-size-4 ml-4">How does my billing work?</span>
+          </div>
+          <div class="column has-text-centered">
+            <ion-icon class="faq-icon" size="large" name="add-outline" id="faq-0-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="block pl-4 pr-4 pb-4" id="fa">
+          <span class="is-size-5">As we are still in active development, our basic pricing will be announced when the platform and infrastructure has been set up.</span>
+        </div>
+      </div> -->
+
     </div>
 
     <footer class="footer">
@@ -336,5 +364,7 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/js/pricing.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>
 </html>
