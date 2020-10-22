@@ -397,7 +397,7 @@ img {
   transform: rotate(-45deg);
 }
 
-.image-render {
+.image-render2 {
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
@@ -414,6 +414,14 @@ img {
 
 .color-dark-blue {
   color: #0b214a;
+}
+
+.bg-grey {
+  background-color: #e9ebee;
+}
+
+.bg-light-blue {
+  background-color: #f1edfb;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
